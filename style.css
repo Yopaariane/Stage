@@ -1,0 +1,85 @@
+h1{
+    font-family: Just Me Again Down Here, cursive; 
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(125, 25, 125);
+    font-size: 80px;
+}
+
+#nav-item{
+    color: green;
+    float: right;
+}
+#logo{
+    height: 80px;
+    width: 80px;
+    transform: rotate(-45deg);
+}
+#p1{ 
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Just Me Again Down Here', cursive;
+}
+.grille{
+    max-width: 1800px;
+    width: 80%;
+    height: auto;
+    margin: 0;
+    border: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 8px;
+}
+.grid-item{
+    width: 300px;
+    height: 300px;
+}
+#im{
+    width: 300px;
+    height: 250px;
+}
+#col{
+    display: flex;
+}
+#p2{
+    text-align: center;
+    color: orange;
+    text-decoration-line: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  #display{
+    display:none;
+}
+  .grille{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+    h1{
+      font-size: 50px;
+    }
+  }
+  .floating-bnt{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 53, 128, 0.956);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgba(34, 255, 0, 0.991);
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.25s;
+  }
+  .floating-bnt:active{
+    background: green;
+  }
+  
+

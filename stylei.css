@@ -1,0 +1,93 @@
+.body {
+    margin: 0;
+}
+
+#nav-item{
+    color: green;
+    float: right;
+}
+#logo{
+    height: 80px;
+    width: 80px;
+    transform: rotate(-45deg);
+}
+#image{
+    height: 100px;
+    width: 100px;
+}
+.col1{
+    display: flex;
+}
+.grille{
+    max-width: 1800px;
+    width: 80%;
+    height: auto;
+    margin:30px auto;
+    border: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 8px;
+}
+.grid-item{
+    width: 300px;
+    height: 300px;
+}
+#im{
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+}
+#p2{
+    text-align: center;
+    color: orange;
+    text-decoration-line: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+.floating-bnt{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 53, 128, 0.956);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgba(34, 255, 0, 0.991);
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.25s;
+  }
+  .floating-bnt:active{
+    background: green;
+  }
+  
+/*cart.html*/
+
+#button{
+    background-color: rgba(7, 242, 7, 0.671); 
+    text-align: center; 
+    width: 150px; 
+    height: 50px; 
+    margin-bottom: 20px;
+    color: rgb(3, 3, 242); 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    border: 2px solid blue;
+    transition: background 0.25s;
+}
+#button:active{
+    background: rgb(1, 26, 1);
+}
+
+/*complex.html*/
+
+#role{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    font-size: large;
+    cursor: pointer;
+}

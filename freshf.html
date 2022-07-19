@@ -31,7 +31,10 @@
                 <a class="nav-link" href="product.html" id="nav-item" style="font-size: 30px;">Collection</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="nav-item" style="font-size: 30px;">Cantact</a>
+                <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#modalInscription" style="font-size: 30px;">Inscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#modalconnection" style="font-size: 30px;">Login</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -158,6 +161,54 @@
         <div class="grid-item">
           <img src="image/noisette.jpg" alt="" id="im">
           <p id="p2">Hazelnut <br>2000FCFA</p>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modalInscription" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Inscription</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <center>
+                  <h5 style="margin-top: 5%;">First name : <input type="text" placeholder="enter your first name"> </h5>
+                  <h5 style="margin-top: 2%;">Last name : <input type="text" placeholder="enter your last name"> </h5>
+                  <h5 style="margin-top: 2%;">E-mail : <input type="text" placeholder="enter your email" style=""> </h5>
+                  <h5 style="margin-top: 2%;">Adress: <input type="text" placeholder="enter your adress" style=""> </h5>
+                  <button id="button" style="margin-bottom: 3%; margin-top: 5%;">Inscription</button>
+                </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="modalconnection" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Connection</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <center>
+                <h2 style="margin-top: 5%;">User name: <input type="text" placeholder="enter your name" style="border: 2px solid rgb(1, 57, 1);"> </h2>
+                <h2 style="margin-top: 2%;">Password: <input type="text" placeholder="enter your password" style="border: 2px solid rgb(1, 57, 1);"> </h2>
+                <button id="button" style="margin-bottom: 3%; margin-top: 5%; font-size: 120%;">LOGIN</button>
+              </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Footer -->

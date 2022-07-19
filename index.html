@@ -31,7 +31,10 @@
                 <a class="nav-link" href="product.html" id="nav-item" style="font-size: 30px;">Collection</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="nav-item" style="font-size: 30px;">Cantact</a>
+                <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#modalInscription" style="font-size: 30px;">Inscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#modalconnection" style="font-size: 30px;">Login</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -102,20 +105,68 @@
             <!--pagination-->
             <nav aria-label="..." style="margin-top: 200px;">
               <ul class="pagination">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                <!--<li class="page-item disabled">
+                  <a class="page-link" href="index.html" tabindex="-1">Previous</a>
                 </li>
                 <li class="page-item"><a class="page-link" href="index.html">1</a></li>
                 <li class="page-item active">
-                  <a class="page-link" href="product.html">2 <span class="sr-only">(current)</span></a>
+                  <a class="page-link" href="product.html">2 <span class="sr-only"></span></a>
                 </li>
-                <li class="page-item"><a class="page-link" href="product.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="product.html">3</a></li>-->
                 <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
+                  <a class="page-link" href="product.html">Next</a>
                 </li>
               </ul>
             </nav>
         </div>
+    </div>
+    <div class="modal" tabindex="-1" id="modalInscription" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Inscription</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <center>
+                <h5 style="margin-top: 5%;">First name : <input type="text" placeholder="enter your first name"> </h5>
+                <h5 style="margin-top: 2%;">Last name : <input type="text" placeholder="enter your last name"> </h5>
+                <h5 style="margin-top: 2%;">E-mail : <input type="text" placeholder="enter your email" style=""> </h5>
+                <h5 style="margin-top: 2%;">Adress: <input type="text" placeholder="enter your adress" style=""> </h5>
+                <button id="button" style="margin-bottom: 3%; margin-top: 5%;">Inscription</button>
+              </center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" tabindex="-1" id="modalconnection" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Connection</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <center>
+              <h2 style="margin-top: 5%;">User name: <input type="text" placeholder="enter your name" style="border: 2px solid rgb(1, 57, 1);"> </h2>
+              <h2 style="margin-top: 2%;">Password: <input type="text" placeholder="enter your password" style="border: 2px solid rgb(1, 57, 1);"> </h2>
+              <button id="button" style="margin-bottom: 3%; margin-top: 5%; font-size: 120%;">LOGIN</button>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
       <section class="">
         <!-- Footer -->
@@ -173,6 +224,7 @@
       
         </footer>
         <!-- Footer -->
+
       </section>
     <!--separate popper and bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 

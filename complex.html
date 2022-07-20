@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="index.html" id="nav-item" style="margin-left: 350px; font-size: 30px;">Home</a>
+         <a class="nav-link active" aria-current="page" href="index.html" id="nav-item" style="font-size: 30px;">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.html" id="nav-item" style="font-size: 30px;">Collection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#modalInscription" style="font-size: 30px;">Inscription</a>
+              <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style="font-size: 30px;">Inscription</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#modalconnection" style="font-size: 30px;">Login</a>
+              <a class="nav-link"  id="nav-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="font-size: 30px;">Login</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -43,14 +43,14 @@
       </div>
     </nav>
       <h1 style="text-align: center; margin-top: 60px; margin-right: 2%;">Transaction amount : ______FCFA</h1>
-      <h1 style="text-align: center; margin-top: 20px;">NAME : <input type="text" placeholder="enter your name"> </h1>
-      <h1 style="text-align: center; margin-top: 20px;">Adress: <input type="text" placeholder="enter your adress"> </h1>
-      <center><input type="text" placeholder="comment" style="text-align: center; width: 30%; height: 120px; border: 2px solid blueviolet;"><br></center>
+      <h1 style="text-align: center; margin-top: 20px;">NAME : <input type="text" placeholder="enter your name" style="margin-left: 1%; font-size: 70%; border-radius: 5px;"> </h1>
+      <h1 style="text-align: center; margin-top: 20px;">Adress: <input type="text" placeholder="enter your adress" style="margin-left: 2%; font-size: 70%; border-radius: 5px;"> </h1>
+      <center><input type="text" placeholder="comment" style="text-align: center; width: 30%; height: 120px; border: 2px solid blueviolet; border-radius: 5px;"><br></center>
         <!--role-->
        <center>
         <h1 style="margin-right: 3%;">
             payement method: 
-            <select name="role" id="role">
+            <select name="role" id="role" style="margin-top: 2%; margin-left: 2%; border-radius: 5px;">
                 <option value="option-1">Cash</option>
                 <option value="option-2">MOMO</option>
                 <option value="option-3">OM</option>
@@ -58,9 +58,9 @@
                 <option value="option-5">Other</option>
             </select>
         </h1>
-        <h1 style="margin-top: 50px;"><button style="margin-right: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16" style="color: blue; margin-right: 20px;">
+        <h1 style="margin-top: 50px;"><button style="margin-right: 20px; border-radius: 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16" style="color: blue; margin-right: 20px;">
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-          </svg>Validate</button> <button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16" style="color: red; margin-right: 20px;">
+          </svg>Validate</button> <button style="border-radius: 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16" style="color: red; margin-right: 20px;">
             <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
           </svg>Abandon</button></h1>
           <br>
@@ -72,50 +72,44 @@
           abandon button.</p>
         </center>
       
-        <div class="modal" tabindex="-1" id="modalInscription" role="dialog">
-          <div class="modal-dialog" role="document">
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Inscription</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title" id="staticBackdropLabel" style="color: rgba(42, 90, 4, 0.775);">Inscription</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <center>
-                    <h5 style="margin-top: 5%;">First name : <input type="text" placeholder="enter your first name"> </h5>
-                    <h5 style="margin-top: 2%;">Last name : <input type="text" placeholder="enter your last name"> </h5>
-                    <h5 style="margin-top: 2%;">E-mail : <input type="text" placeholder="enter your email" style=""> </h5>
-                    <h5 style="margin-top: 2%;">Adress: <input type="text" placeholder="enter your adress" style=""> </h5>
-                    <button id="button" style="margin-bottom: 3%; margin-top: 5%;">Inscription</button>
-                  </center>
+                <center>
+                  <h5 style="margin-top: 5%; color: rgba(42, 90, 4, 0.775);">First name : <input type="text" placeholder="enter your first name" style="border: 2px solid rgba(141, 255, 47, 0.775); border-radius: 6px;"> </h5>
+                  <h5 style="margin-top: 2%; color: rgba(42, 90, 4, 0.775);">Last name : <input type="text" placeholder="enter your last name" style="border: 2px solid rgba(141, 255, 47, 0.775); border-radius: 6px;"> </h5>
+                  <h5 style="margin-top: 2%; color: rgba(42, 90, 4, 0.775);">E-mail : <input type="text" placeholder="enter your email" style="border: 2px solid rgba(141, 255, 47, 0.775); border-radius: 6px;"> </h5>
+                  <h5 style="margin-top: 2%; color: rgba(42, 90, 4, 0.775);">Adress: <input type="text" placeholder="enter your adress" style="border: 2px solid rgba(141, 255, 47, 0.775); border-radius: 6px;"> </h5>
+                </center>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Continue</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="modal" tabindex="-1" id="modalconnection" role="dialog">
-          <div class="modal-dialog" role="document">
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Connection</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title" id="staticBackdropLabel" style="color: rgba(42, 90, 4, 0.775);">Connection</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <center>
-                  <h2 style="margin-top: 5%;">User name: <input type="text" placeholder="enter your name" style="border: 2px solid rgb(1, 57, 1);"> </h2>
-                  <h2 style="margin-top: 2%;">Password: <input type="text" placeholder="enter your password" style="border: 2px solid rgb(1, 57, 1);"> </h2>
-                  <button id="button" style="margin-bottom: 3%; margin-top: 5%; font-size: 120%;">LOGIN</button>
+                  <h2 style="margin-top: 5%; color: rgba(42, 90, 4, 0.775);">User name: <input type="text" placeholder="enter your name" style="border: 2px solid rgba(141, 255, 47, 0.775); border-radius: 6px;"> </h2>
+                  <h2 style="margin-top: 2%; color: rgba(42, 90, 4, 0.775);">Password: <input type="text" placeholder="enter your password" style="border: 2px solid rgba(141, 255, 47, 0.775); border-radius: 6px;"> </h2>
                 </center>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
               </div>
             </div>
           </div>
@@ -175,5 +169,10 @@
     
       </footer>
       <!-- Footer --> 
+       <!--separate popper and bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

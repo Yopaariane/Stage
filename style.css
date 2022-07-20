@@ -81,5 +81,8 @@ h1{
   .floating-bnt:active{
     background: green;
   }
+  a{
+    text-decoration: none;
+}
   
 
